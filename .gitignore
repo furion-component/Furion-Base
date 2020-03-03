@@ -1,0 +1,20 @@
+*.iml
+
+
+.idea/
+.gradle/
+*.ipr
+*.iws
+
+/build
+/out/
+/target/
+
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+/gradle.properties
+
+
+
