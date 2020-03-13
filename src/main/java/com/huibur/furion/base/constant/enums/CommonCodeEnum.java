@@ -4,7 +4,7 @@ import com.huibur.furion.base.interfaces.ErrorCode;
 
 /*******************************************************
  * Copyright(c)2019-2020 HuiBur. All rights reserved.
- * Header: CodeEnum.java
+ * Header: CommonCodeEnum.java
  * Discussion: common code enum
  * Create Date: 2020/3/2
  * Author: Jerry Wen

@@ -1,6 +1,6 @@
 package com.huibur.furion.base.model.entity;
 
-import java.math.BigInteger;
+
 
 /*******************************************************
  * Copyright(c)2019 - HuiBur .All rights reserved.
@@ -11,28 +11,28 @@ import java.math.BigInteger;
  * Version: 1.0
  *******************************************************/
 public abstract class BaseTreeEntity<T extends BaseTreeEntity> {
-    protected BigInteger id;
+    protected Long id;
     protected String name;
-    protected BigInteger parentId;
+    protected Long parentId;
     protected T parent;
 
     private BaseTreeEntity() {
 
     }
 
-    public BigInteger getId() {
+    public Long getId() {
         return this.id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public BigInteger getParentId() {
+    public Long getParentId() {
         return this.parentId;
     }
 
-    public void setParentId(BigInteger parentId) {
+    public void setParentId(Long parentId) {
         this.parentId = parentId;
     }
 

@@ -14,6 +14,7 @@ import com.huibur.furion.base.model.entity.ResponseResult;
  *******************************************************/
 @SuppressWarnings("unused")
 public class ResultBuilder {
+
     public static ResponseResult success() {
         return success(CommonCodeEnum.SUCCESS);
     }
