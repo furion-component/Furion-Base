@@ -4,6 +4,8 @@ import com.huibur.furion.base.constant.enums.CommonCodeEnum;
 import com.huibur.furion.base.interfaces.ErrorCode;
 import com.huibur.furion.base.model.entity.ResponseResult;
 
+import java.io.UnsupportedEncodingException;
+
 /*******************************************************
  * Copyright(c)2019-2020 HuiBur .All rights reserved.
  * Header: ResultBuilder.java
@@ -34,6 +36,11 @@ public class ResultBuilder {
         return fail(CommonCodeEnum.FAILED);
     }
 
+    public static ResponseResult fail(String msg) {
+        return new ResponseResult(CommonCodeEnum.FAILED.getCode(), msg, null);
+    }
+
+
     public static ResponseResult fail(ErrorCode code) {
         return fail(code, null);
     }
@@ -41,4 +48,6 @@ public class ResultBuilder {
     public static <T> ResponseResult<T> fail(ErrorCode code, T t) {
         return new ResponseResult<>(code.getCode(), code.getDesc(), t);
     }
+
+
 }
