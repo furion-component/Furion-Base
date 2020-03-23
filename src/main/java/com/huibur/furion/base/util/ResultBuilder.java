@@ -16,6 +16,7 @@ import java.io.UnsupportedEncodingException;
  *******************************************************/
 @SuppressWarnings("unused")
 public class ResultBuilder {
+
     public static ResponseResult success() {
         return success(CommonCodeEnum.SUCCESS);
     }
